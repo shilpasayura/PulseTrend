@@ -16,6 +16,7 @@ new arc.nav('sales-prediction', q('#sales-prediction')[0], function(context, par
 		}
 	});
 	function loadPredictions(product) {
+		context.q('.chart')[0].innerHTML = 'Loading...';
 		arc.ajax('/data/sales-prediction'+(product ? '/'+product : ''), {
 			callback: function(res) {
 				const data = JSON.parse(res.responseText);
@@ -38,7 +39,7 @@ new arc.nav('sales-prediction', q('#sales-prediction')[0], function(context, par
 						curveType: 'function',
 						legend: { position: 'bottom' },
 						chartArea: {
-							height: '70%'
+							height: '45%'
 						},
 						hAxis: { 
 							title: 'Date',

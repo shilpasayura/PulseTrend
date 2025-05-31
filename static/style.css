@@ -73,6 +73,11 @@ div.align-center {
 
 /* ============================= */
 
+h1 img {
+	height: 37px;
+	vertical-align: -8px;
+}
+
 h2 {
 }
 

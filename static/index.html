@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Enterprise Intelligence Dashboard</title>
+	<link rel="stylesheet" href="static/style.css" />
+	<script src="static/arc.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Enterprise Intelligence Dashboard</h1>
+		<div>
+			User Name
+			<a href="">Sign Out</a>
+		</div>
+	</header>
+    <ul class="nav">
+		<li>
+			<a href="#sentiment">Sentiment Correlations</a>
+			<a href="#keywords">Trending Keywords</a>
+			<a href="#opportunities">Opportunities</a>
+			<a href="#sales-prediction">Sales Prediction</a>
+			<!-- Analytics
+			Diagnostics
+			Predictions
+			Prescriptions
+			CRM
+				Support Bot
+			Stratergy
+				Decision AI -->
+		</li>
+	</ul>
+	<content>
+		 <div class="frame" id="sentiment">
+			<h2>Product and Category Sentiment</h2>
+			<div class="chart counts"></div>
+			<div class="chart correlation"></div>
+		 </div>
+		 <div class="frame" id="keywords">
+			<h2>Top Search Keywords</h2>
+			<div class="chart"></div>
+		 </div>
+		 <div class="frame" id="opportunities">
+			<h2>Emerging Trends: High Search but Low Sales</h2>
+			<div class="chart"></div>
+		 </div>
+		 <div class="frame" id="sales-prediction">
+			<div style="float:right">
+				Filter: <select></select>
+			</div>
+			<h2>Sales Prediction</h2>
+			<div class="chart"></div>
+		 </div>
+	</content>
+	<script src="static/script.js"></script>
+</body>
+</html>

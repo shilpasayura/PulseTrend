@@ -1,0 +1,13 @@
+flask
+jsonify
+langgraph 
+langsmith
+huggingface_hub
+langchain_huggingface
+torch
+nltk
+prophet
+protobuf
+sentencepiece
+requests
+python-dotenv
